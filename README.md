@@ -16,12 +16,16 @@ as an example for other projects.
 Running the program by itself will just play the included music and display no graphics.
 To see something, one must use one or more input devices.
 
-Right after starting the program you have 5 seconds to calibrate the light sensor.
+Right after starting the Processing program you have 5 seconds to calibrate the light sensor.
 During this time the LED in the arduino board will glow, and you should cover the
 light sensor with your hand, then uncover it, at least once. What this does is
 finding out the minimum and maximum amount of light received by the light sensor.
 The output value sent to Processing is later limited to the range 0 .. 255 by
 the Arduino code.
+
+I don't currently know why running the Processing program triggers a reset on the Arduino
+board, but it is very convenient. Otherwise I would be forced to press the reset button
+in the Arduino each time I want to calibrate.
 
 A video of what it looks like is coming.
 This is an unfinished prototype.

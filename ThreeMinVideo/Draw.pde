@@ -1,6 +1,6 @@
 void draw() {
   // read updated fft values
-  fft.forward(jingle.mix);
+  fft.forward(player.mix);
 
   // read Arduino
   readSerial();
